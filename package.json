@@ -23,7 +23,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon",
-    "watch": "tsc --watch"
+    "watch": "tsc --watch",
+    "start:docker": "docker-compose up -d",
+    "stop:docker": "docker-compose down",
+    "start:docker:clean":"docker-compose up -d --force-recreate --build"
   },
   "repository": {
     "type": "git",
