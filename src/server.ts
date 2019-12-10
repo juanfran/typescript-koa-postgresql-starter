@@ -1,15 +1,15 @@
-import Koa from 'koa';
-import Router from '@koa/router';
 import cors from '@koa/cors';
-import logger from 'koa-logger';
+import Router from '@koa/router';
+import Koa from 'koa';
 import bodyParser from 'koa-bodyparser';
+import logger from 'koa-logger';
 
 const app = new Koa();
 const router = new Router();
 
 router.get('/', async (ctx) => {
   ctx.body = {
-    text: 'Hello World'
+    text: 'Hello World',
   };
 });
 

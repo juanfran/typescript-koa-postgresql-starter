@@ -26,7 +26,8 @@
     "watch": "tsc --watch",
     "start:docker": "docker-compose up -d",
     "stop:docker": "docker-compose down",
-    "start:docker:clean":"docker-compose up -d --force-recreate --build"
+    "start:docker:clean":"docker-compose up -d --force-recreate --build",
+    "tslint": "tslint --project ."
   },
   "repository": {
     "type": "git",
