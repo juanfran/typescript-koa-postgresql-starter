@@ -11,6 +11,8 @@ services:
       POSTGRES_DB: mydb
     volumes:
       - ./postgres-data:/var/lib/postgresql/data
+    ports:
+      - "35432:5432"
 
   adminer:
     image: adminer
